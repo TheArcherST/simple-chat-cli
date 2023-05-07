@@ -4,8 +4,8 @@ import time
 from argparse import Namespace
 from core.long_state import LongStateObjectMixin, StatePlaceholder
 import shlex
-from commands_parser import build_parser
-from config import command_handlers_registry, simple_chat_api, storage
+from .commands_parser import build_parser
+from .config import command_handlers_registry, simple_chat_api, storage
 from threading import Thread
 
 

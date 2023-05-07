@@ -6,5 +6,5 @@ setuptools.setup(name="simple_chat_cli", version="1.0",
                  url='#',
                  author='Shapovalov Mihail',
                  author_email='mihailsapovalov05@gmail.com',
-                 entry_points={"console_scripts": ["cowsay = main:cli"]},
+                 entry_points={"console_scripts": ["simple-chat = main:cli"]},
                  zip_safe=False)

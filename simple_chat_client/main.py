@@ -2,7 +2,7 @@ from typing import Optional
 from dataclasses import dataclass
 import time
 from argparse import Namespace
-from long_state import LongStateObjectMixin, StatePlaceholder
+from core.long_state import LongStateObjectMixin, StatePlaceholder
 import shlex
 from commands_parser import build_parser
 from config import command_handlers_registry, simple_chat_api, storage

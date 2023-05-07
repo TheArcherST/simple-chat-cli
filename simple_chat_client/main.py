@@ -1,4 +1,4 @@
-from typing import Callable, Optional
+from typing import Optional
 from dataclasses import dataclass
 import time
 from argparse import Namespace

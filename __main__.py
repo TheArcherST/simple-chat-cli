@@ -43,17 +43,15 @@ class Application(LongStateObjectMixin):
 
 def update_daemon(app: Application):
     while True:
-        time.sleep(3)
+        time.sleep(1)
         with app:
             if app.auth_info.username is not None:
                 updates = simple_chat_api.get_updates(app.auth_info.username)
-                print(updates)
-                print('\n> ', end='')
                 if not updates:
                     continue
                 for i in updates:
                     print(f'{i.chat_id}: {i.text}')
-                print('\n> ')
+                print('\n> ', end='')
 
 
 def ui_daemon(app):

@@ -3,5 +3,5 @@ from core.api_wrapper import SimpleChatAPI
 from long_state import JsonStateStorage
 
 command_handlers_registry = CommandHandlersRegistry()
-simple_chat_api = SimpleChatAPI('http://0.0.0.0:8000')
+simple_chat_api = SimpleChatAPI('https://dziroh.ru:8000')
 storage = JsonStateStorage('data.json')

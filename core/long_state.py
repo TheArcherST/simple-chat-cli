@@ -62,6 +62,16 @@ class JsonStateStorage(StateStorage):
         return None
 
 
+class MemoryStateStorage(StateStorage):
+    data = dict()
+
+    def load(self):
+        return self.data
+
+    def save(self, data: dict) -> None:
+        self.data = data
+
+
 class LongStateObjectMixin:
     __type_registry: dict
 

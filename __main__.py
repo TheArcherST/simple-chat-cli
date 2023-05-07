@@ -50,7 +50,7 @@ def update_daemon(app: Application):
                 if not updates:
                     continue
                 for i in updates:
-                    print(f'{i.chat_id}: {i.text}')
+                    print(f'{i.chat}: {i.text}')
                 print('\n> ', end='')
 
 

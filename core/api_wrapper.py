@@ -10,8 +10,8 @@ class SimpleChatAPIError(Exception):
 @dataclass
 class Message:
     id: int
-    from_user_id: int
-    chat_id: int
+    from_user: str
+    chat: str
     text: str
 
 

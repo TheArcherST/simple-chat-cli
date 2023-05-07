@@ -1,7 +1,7 @@
 import setuptools
 
 
-setuptools.setup(name="simple_chat_cli", version="1.0",
+setuptools.setup(name="simple_chat_client", version="1.0",
                  install_requires=open('requirements.txt').read().splitlines(),
                  url='#',
                  author='Shapovalov Mihail',

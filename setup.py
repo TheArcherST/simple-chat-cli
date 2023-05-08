@@ -1,7 +1,7 @@
 import setuptools
 
 
-setuptools.setup(name="simple_chat_client", version="1.0",
+setuptools.setup(name="simple_chat_client", version="1.0.1",
                  packages=[
                     'simple_chat_client',
                  ],

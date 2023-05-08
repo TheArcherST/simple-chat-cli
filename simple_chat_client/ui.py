@@ -102,12 +102,10 @@ class SimpleChatApp(App):
         yield Footer()
 
     def synchronize_messages(self):
-        self.query(MessageWidget).remove()
+        already_rendered = set(i.message_id for i in self.query(MessageWidget))
+        diff_ids = set(i.id for i in shared_container.history) - already_rendered
         messages_container = self.query_one(MessageHistoryContainer)
-        messages_container.children[0].mount_all((
-            MessageWidget(i.id)
-            for i in shared_container.history
-        ))
+        messages_container.children[0].mount_all(map(MessageWidget, diff_ids))
 
     def on_input_submitted(self, _event):
         message_input = self.query_one(MessageInput)

@@ -1,1 +1,1 @@
-recursive-include simple_chat_client/libruntime *.so
+recursive-include dist/simple_chat_client/pyarmor_runtime_000000 *.so

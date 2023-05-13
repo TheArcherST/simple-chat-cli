@@ -1,9 +1,10 @@
 import setuptools
 
 
-setuptools.setup(name="simple_chat_client", version="1.0.1",
+setuptools.setup(name="simple_chat_client", version="1.0.2",
                  packages=[
                     'simple_chat_client',
+                    'simple_chat_client.pyarmor_runtime_000000'
                  ],
                  install_requires=[
                     'requests~=2.26.0',

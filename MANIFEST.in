@@ -1,0 +1,1 @@
+recursive-include simple_chat_client/libruntime *.so

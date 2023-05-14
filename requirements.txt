@@ -2,4 +2,4 @@ requests~=2.26.0
 dataclass_factory
 textual~=0.23.0
 typing_extensions
-aiohttp~=3.7.4.post0
+aiohttp~=3.7.4

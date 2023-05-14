@@ -1,6 +1,14 @@
 [build-system]
-    requires = [
-        "setuptools>=66.1.1",
-        "wheel"
-    ]
-    build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools>=66.1.1",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+requires-python = ">=3.8"
+depencies = [
+    "requests~=2.26.0",
+    "dataclass_factory",
+    "textual~=0.23.0",
+    "typing_extensions",
+    "aiohttp~=3.7.4"
+]
